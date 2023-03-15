@@ -46,10 +46,10 @@ module.exports = (env) => {
         plugins: [CSSExtract,
             new SentryWebpackPlugin({
                 release: "testRelease",
-                org: "ORGg",
+                org: "ORG",
                 project: "PROJECT",
                 authToken: 'AUTHTOKEN',
-                urlPrefix: "~/static"
+                urlPrefix: "~/static/frontend"
               })],
         // devtool: isProduction ? 'source-map' : 'inline-source-map',
         devServer: {
