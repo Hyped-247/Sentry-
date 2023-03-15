@@ -15,6 +15,11 @@ export default class HomePage extends Component {
      */
     render() {
 
-        return (<h1>Hello world</h1>);
+        return (
+            <div>
+                <h1>Hello world</h1>;
+                <button onClick={() => methodDoesNotExist()}>Break the world</button>
+            </div>
+        );
     };
 };

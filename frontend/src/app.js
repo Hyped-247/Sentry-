@@ -5,9 +5,11 @@ import * as Sentry from "@sentry/react";
 import { BrowserTracing } from "@sentry/tracing";
 
 Sentry.init({
-    dsn: 'https://fc3954ffb97547599fb291d4b3119c5c@o4504521040723968.ingest.sentry.io/4504521041969152',
+    dsn: 'DSN',
     integrations: [new BrowserTracing()],
     tracesSampleRate: 1.0,
+    debug: true,
+    release: "testRelease"
 });
 
 
